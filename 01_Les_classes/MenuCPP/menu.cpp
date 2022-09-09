@@ -5,7 +5,7 @@ Menu::Menu(const string &_nom):nom(_nom)
   ,options(nullptr) ,nbOptions(0),longueurMax(0){
     ifstream fichierMenu(nom);
     if (fichierMenu.fail()) {
-        string message = " file not found !!";
+        string message = "File not found!";
         cout << message << endl;
 
     } else {
