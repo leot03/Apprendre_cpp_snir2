@@ -5,9 +5,7 @@ CONFIG -= qt
 
 SOURCES += \
         ipv4.cpp \
-        main.cpp \
-        menu.cpp
+        main.cpp
 
 HEADERS += \
-    ipv4.h \
-    menu.h
+    ipv4.h
