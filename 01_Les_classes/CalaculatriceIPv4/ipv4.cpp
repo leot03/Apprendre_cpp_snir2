@@ -18,6 +18,14 @@ void IPv4::CalculerMasque(const unsigned char _cidr)
     }
 }
 
+int IPv4::NBitAl(unsigned char val) {
+    int n = 0;
+    do {
+        n += val & 1;
+    } while (val >>=1);
+    return n;
+}
+
 IPv4::IPv4(const unsigned char *_adresse, const unsigned char *_masque)
 {
     adresse = new unsigned char [4];

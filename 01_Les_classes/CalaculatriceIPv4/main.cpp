@@ -1,31 +1,31 @@
+#include "menu.h"
 #include <iostream>
 
 using namespace std;
 
-void AfficherTableau(const unsigned char *tab);
-
+enum CHOIX_MENU
+{
+    OPTION_1 = 1,
+    OPTION_2,
+    OPTION_3,
+    OPTION_4,
+    QUITTER
+};
 int main()
 {
-    unsigned char adresse[4] = {192.168.1.1};
-    unsigned char masque[4];
-    unsigned char reseau[4];
-    unsigned char diffusion[4];
-
-    IPv4 uneAdresse(adresse, 24);
-
-    cout << "Adresse IPV4 :";
-    AfficherTableau(adresse);
-    uneAdresse.ObtenirMasque(masque);
-    cout << "Masque:";
-    AfficherTableau(masque);
+    int choix;
+    Menu leMenu("menu.txt");
+    do
+    {
+        choix = leMenu.Afficher();
+        switch (choix)
+        {
+        case OPTION_1:
+            cout << "Vous avez choisi l'option n°1" << endl;
+            Menu::AttendreAppuiTouche();
+            break;
+            // à compléter
+        }
+    } while(choix != QUITTER);
     return 0;
-}
-
-void AfficherTableau(const unsigned char *tab) {
-    for (int indice =0; indice < 4; indice++) {
-        cout << static_cast<int>(tab[indice++]);
-        if(indice < 3)
-            cout << ".";
-    }
-    cout << endl;
 }
