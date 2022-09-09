@@ -23,9 +23,9 @@ Menu::Menu(const string &_nom):nom(_nom)
             if (longueur > longueurMax) {
                 longueurMax = longueur;
             }
-            if (longueur > 0){              //si la ligne n'est pas vide
-                options[i] = item;          //on l'ajoute au tableau
-            } else {                        //sinon on retire 1 du nb d'options
+            if (longueur > 0){ //si la ligne n'est pas vide
+                options[i] = item; //on l'ajoute au tableau
+            } else { //sinon on retire 1 du nb d'options
                 nbOptions--;
                 i--;
             }
