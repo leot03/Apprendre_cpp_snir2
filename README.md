@@ -11,6 +11,7 @@
 
 ## Fabriqué avec
 * [Netbeans](https://netbeans.apache.org/) - Environnement de développement intégré
+* [Qt Creator](https://www.qt.io/) - Environnement de développement intégré multiplate-forme
 
 ## Versions
 **Dernière modification le :** 08/09/2022<br>
@@ -18,6 +19,3 @@
 
 ## Auteurs
 * **Léo THOMAS** [@leot03](https://github.com/leot03)
-
-
-Ajouter change log
