@@ -1,6 +1,12 @@
 #include "menu.h"
 #include <iostream>
 
+/**
+ * @brief Menu::Menu
+ * @details Affiche le menu sur la console
+ * @return int le code de l'item sélectionné
+ */
+
 Menu::Menu(const string &_nom):nom(_nom)
   ,options(nullptr) ,nbOptions(0),longueurMax(0){
     ifstream fichierMenu(nom);
