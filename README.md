@@ -10,6 +10,7 @@
     * [MenuCPP](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/01_Les_classes/MenuCPP)
 * [02 Relation entre les classes](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/02_Relation_entre_les_classes)
     * [Chapitre3](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/02_Relation_entre_les_classes/Chapitre3)
+    * [Exo Barre](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/02_Relation_entre_les_classes/ExoBarre)
 
 ## Fabriqué avec
 * [Netbeans](https://netbeans.apache.org/) - Environnement de développement intégré
