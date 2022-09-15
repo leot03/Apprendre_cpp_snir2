@@ -1,0 +1,27 @@
+table{
+    border-collapse: collapse;
+}
+table, td, tr, th{
+    border: black 2px ridge;
+    text-align: center;
+}
+
+td.titre{
+    background-color: #ffcccc;
+}
+
+td.pasnum{
+    background-color: black;
+}
+
+td.pasauteur{
+    background-color: black;
+}
+
+td.numero{
+    background-color: #ccccff;
+}
+
+td.auteur{
+    background-color: #99ff99;
+}
