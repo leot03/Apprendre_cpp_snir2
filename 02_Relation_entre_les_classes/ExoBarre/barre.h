@@ -6,7 +6,6 @@
 
 using namespace std;
 
-
 class Barre
 {
 public:
@@ -19,8 +18,11 @@ public:
 
     void AfficherCaracteristique();
 
-protected:
+private:
     string reference;
+    string nom;
+    unsigned int longueur;
+    double densite;
 };
 
 #endif // BARRE_H

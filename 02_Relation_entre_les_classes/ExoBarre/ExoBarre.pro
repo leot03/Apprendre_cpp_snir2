@@ -5,7 +5,9 @@ CONFIG -= qt
 
 SOURCES += \
         barre.cpp \
+        barreronde.cpp \
         main.cpp
 
 HEADERS += \
-    barre.h
+    barre.h \
+    barreronde.h
