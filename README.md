@@ -11,13 +11,16 @@
 * [02 Relation entre les classes](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/02_Relation_entre_les_classes)
     * [Chapitre3](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/02_Relation_entre_les_classes/Chapitre3)
     * [Exo Barre](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/02_Relation_entre_les_classes/ExoBarre)
+* [03 IPCs](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/03_IPCs)
+    * [01 Communication Inter Processus Locale](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/03_IPCs/01_Communication_Inter_Processus_Locale)
+        * [Un peu de patiente](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/03_IPCs/01_Communication_Inter_Processus_Locale/unPeuDePatiente)
 
 ## Fabriqué avec
 * [Netbeans](https://netbeans.apache.org/) - Environnement de développement intégré
 * [Qt Creator](https://www.qt.io/) - Environnement de développement intégré multiplate-forme
 
 ## Versions
-**Dernière modification le :** 15/09/2022<br>
+**Dernière modification le :** 20/09/2022<br>
 **Ajouté sur Github le :** 07/09/2022
 
 ## Auteurs
