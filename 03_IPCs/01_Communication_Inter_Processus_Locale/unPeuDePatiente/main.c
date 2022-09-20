@@ -10,19 +10,14 @@ int main (int argc, char *argv[]) {
         // p1
 	pid = fork();
 	if (pid == 0) { //P2
+            // attendre la fin de P1
+            waitpid(getppid(), NULL, 0);
+            
             sprintf(buffer, "Mon pid est de %d, le pid de mon père est de %d\n", getpid, getppid);
             boite("P2", buffer);
 	} else { // P1
-            pid = fork();
-            if (pid==0) {// P3 
-                sprintf(buffer, "Mon pid est de %d, le pid de mon père est de %d\n", getpid, getppid);
-                boite("P3", buffer);
-            } 
-        } else { //P1
-            // attendre la fin d'un fils
-            pidFils = wait(NULL);
-            sprintf(buffer, "Mon pid est de %d, le pid du fils termine %d\n", getpid, getppid);
+            sprintf(buffer, "Mon pid est de %d\n", getpid());
             boite("P1", buffer);
-            }
+        }
 	return EXIT_SUCCESS;
 }
