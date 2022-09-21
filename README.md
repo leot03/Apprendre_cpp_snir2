@@ -12,6 +12,7 @@
     * [Chapitre3](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/02_Relation_entre_les_classes/Chapitre3)
     * [Exo Barre](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/02_Relation_entre_les_classes/ExoBarre)
     * [Arrosage](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/02_Relation_entre_les_classes/Arrosage)
+    * [Equilibreuse](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/02_Relation_entre_les_classes/Equilibreuse)
 * [03 IPCs](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/03_IPCs)
     * [01 Communication Inter Processus Locale](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/03_IPCs/01_Communication_Inter_Processus_Locale)
         * [Un peu de patiente](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/03_IPCs/01_Communication_Inter_Processus_Locale/unPeuDePatiente)
