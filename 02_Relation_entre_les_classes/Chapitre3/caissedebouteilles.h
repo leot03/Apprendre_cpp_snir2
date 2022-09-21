@@ -6,8 +6,8 @@ class CaisseDeBouteilles : public Contenant
 {
 public:
     CaisseDeBouteilles(const int _largeur, const int _hauteur, const int _profondeur, const int _nbBouteilles, const int _contenance);
-    ~CaisseDeBouteilles();
     int calculerVolumes();
+
 private:
     int nbBouteilles;
     int contenance;
