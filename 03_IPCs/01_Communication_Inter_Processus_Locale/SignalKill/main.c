@@ -41,13 +41,12 @@ int main(int argc, char *argv[]) {
             pause();
         }
     } else { // P1
-            
         pidP2 = pid;
         printf("pere pid = %d \n", getpid());
         sleep(1); // tempo pour envoyer signal en décalé
         kill(pidP2, SIGUSR1);
         sleep(2);
-        }
+    }
     return EXIT_SUCCESS;
 }
 
