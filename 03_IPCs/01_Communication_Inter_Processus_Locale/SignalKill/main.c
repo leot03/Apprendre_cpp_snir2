@@ -19,6 +19,42 @@ void traitement(int sig) {
 }
 
 int main(int argc, char *argv[]) {
+    int pid, pidP2;
+    (void) signal(SIGUSR1, traitement); // Rederoutage des signaux SIGUSR1
+    
+    //P1
+    pidP2 = getpid();
+    cpt = 0;
+    // vers la fonction traitement
+    pid = fork();
+    if(pid == 0) {
+        pid = fork();
+        if(pid == 0) {//P2
+            pidP2 = getppid();
+            printf("p3 pid = %d\n", getpid());
+            sleep(2); // tempo pour envoyer signal en décalé
+            kill(pidP2, SIGUSR1);
+        } else {
+            printf("p2 pid = %d \n", getpid());
+            // attendre les deux signaux en provencance de P2 et P3 avant de se terminer
+            pause();
+            pause();
+        }
+    } else { // P1
+            
+        pidP2 = pid;
+        printf("pere pid = %d \n", getpid());
+        sleep(1); // tempo pour envoyer signal en décalé
+        kill(pidP2, SIGUSR1);
+        sleep(2);
+        }
+    return EXIT_SUCCESS;
+}
+
+
+
+/*
+int main(int argc, char *argv[]) {
     int pid, pidP1;
     (void) signal(SIGUSR1, traitement); // Rederoutage des signaux SIGUSR1
     //P1
@@ -42,6 +78,7 @@ int main(int argc, char *argv[]) {
         }
     return EXIT_SUCCESS;
 }
+*/
 
 /*
 int main(int argc, char *argv[])
