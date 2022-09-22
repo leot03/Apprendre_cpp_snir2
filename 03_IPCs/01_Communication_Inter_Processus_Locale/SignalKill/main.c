@@ -6,10 +6,16 @@
 #include <string.h>
 #include <errno.h>
 
+int cpt;
+
 // fonction de traitement du signal SIGUSR1
 void traitement(int sig) {
     (void) signal(SIGUSR1, traitement);
-    printf("Un signal SIGUSR1 ppid :%d\n", getppid());
+    cpt++;
+    printf("cpt : %d\n", cpt);
+    if (cpt==2) {
+        printf("un signal SIGUSR1 je suis pid : %d\n", getpid());
+    }
 }
 
 int main(int argc, char *argv[]) {
@@ -17,6 +23,7 @@ int main(int argc, char *argv[]) {
     (void) signal(SIGUSR1, traitement); // Rederoutage des signaux SIGUSR1
     //P1
     pidP1 = getpid();
+    cpt = 0;
     // vers la fonction traitement
     pid= fork();
     if(pid == 0) {
