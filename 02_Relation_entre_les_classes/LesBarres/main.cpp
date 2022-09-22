@@ -7,12 +7,12 @@ using namespace std;
 
 int main()
 {
-    BarreCarree uneBarre("00003","Barre 2x2 en Cuivre", 200, 8.920, 2);
+    barreCarree uneBarre("00003", 200, 8.92, "Barre 2x2 en Cuivre", 2);
         uneBarre.AfficherCaracteristiques();
         cout << "Le poids de la barre est : " << uneBarre.CalculerMasse();
         cout << endl;
 
-    BarreRonde uneBarreRonde("00004", "Barre ronde diamètre");
+    BarreRonde uneBarreRonde("00004", 200, 8.92, "Barre ronde diamètre", 2);
         uneBarreRonde.AfficherCaracteristiques();
         cout << "Le poids de la barre est : " << uneBarreRonde.CalculerMasse();
         cout << endl;

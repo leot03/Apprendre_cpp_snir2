@@ -11,7 +11,7 @@ public:
     ~BarreRonde();
     double CalculerSection();
     float CalculerMasse();
-    void AfficherCarateristique();
+    void AfficherCaracteristique();
 protected:
     double diametre;
 };

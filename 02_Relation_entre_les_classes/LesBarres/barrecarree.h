@@ -3,16 +3,15 @@
 #include "barre.h"
 #include <math.h>
 
-class BarreCarree : public Barre
+class barreCarree : public Barre
 {
 public:
-    BarreCarree(const string _reference, const int _longueur, const float _densite, const string _nomAlliage,const int _largeur, const unsigned int _cote=5);
-    ~BarreCarree();
+    barreCarree(const string _reference, const int _longueur, const float _densite, const string _nomAlliage, const unsigned int _cote=5);
+    ~barreCarree();
     double CalculerSection();
     float CalculerMasse();
     void AfficherCarateristique();
 private:
-    int largeur;
     unsigned int cote;
 };
 

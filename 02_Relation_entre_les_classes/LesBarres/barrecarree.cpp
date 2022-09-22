@@ -1,27 +1,29 @@
 #include "barrecarree.h"
 #include "barre.h"
+
 #include <iostream>
 
+using namespace std;
 
-BarreCarree::BarreCarree(const string _reference, const int _longueur, const float _densite, const string _nomAlliage, const int _largeur):
+barreCarree::barreCarree(const string _reference, const int _longueur, const float _densite, const string _nomAlliage, const unsigned int _cote):
     Barre (_reference,_longueur,_densite,_nomAlliage),
-    largeur(_largeur)
+    cote(_cote)
 {
     cout << "Constructeur de la Classe Barre Carrée \n" << endl;
 }
 
-BarreCarree::~BarreCarree()
+barreCarree::~barreCarree()
 {
     cout << "Destructeur de la Classe Barre Carrée" << endl;
 }
 
-double BarreCarree::CalculerSection()
+double barreCarree::CalculerSection()
 {
 
     return cote*cote;
 }
 
-float BarreCarree::CalculerMasse()
+float barreCarree::CalculerMasse()
 {
     float masse = 0;
 
@@ -31,7 +33,7 @@ float BarreCarree::CalculerMasse()
     return masse;
 }
 
-float BarreCarree::AfficherCarateristique()
+void barreCarree::AfficherCarateristique()
 {
 
     Barre::AfficherCaracteristiques();

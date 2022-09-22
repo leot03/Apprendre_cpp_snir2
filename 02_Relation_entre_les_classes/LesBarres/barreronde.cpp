@@ -28,7 +28,7 @@ float BarreRonde::CalculerMasse()
     return masse;
 }
 
-float BarreRonde::AfficherCarateristique()
+void BarreRonde::AfficherCaracteristique()
 {
 
     Barre::AfficherCaracteristiques();
