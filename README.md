@@ -23,7 +23,7 @@
 * [Qt Creator](https://www.qt.io/) - Environnement de développement intégré multiplate-forme
 
 ## Versions
-**Dernière modification le :** 21/09/2022<br>
+**Dernière modification le :** 22/09/2022<br>
 **Ajouté sur Github le :** 07/09/2022
 
 ## Auteur
