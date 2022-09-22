@@ -1,6 +1,6 @@
 ![](https://cdn.discordapp.com/attachments/400019430479888394/1017780680798777385/logotouchard.png)
 
-# Apprendre le C++ | SN-IR 2
+# Apprendre le C++ | SN-IR 2 
 > Répertoire Github regroupant les TD réalisés en classe
 
 ## Sommaire
