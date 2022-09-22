@@ -16,6 +16,7 @@
 * [03 IPCs](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/03_IPCs)
     * [01 Communication Inter Processus Locale](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/03_IPCs/01_Communication_Inter_Processus_Locale)
         * [Un peu de patiente](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/03_IPCs/01_Communication_Inter_Processus_Locale/unPeuDePatiente)
+        * [SignalKill](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/03_IPCs/01_Communication_Inter_Processus_Locale/SignalKill)
 
 ## Fabriqué avec
 * [Netbeans](https://netbeans.apache.org/) - Environnement de développement intégré
@@ -25,5 +26,5 @@
 **Dernière modification le :** 21/09/2022<br>
 **Ajouté sur Github le :** 07/09/2022
 
-## Auteurs
+## Auteur
 * **Léo THOMAS** [@leot03](https://github.com/leot03)
