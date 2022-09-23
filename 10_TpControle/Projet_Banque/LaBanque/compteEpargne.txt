@@ -1,0 +1,5 @@
+Consulter solde
+Effectuer un depot
+Effectuer un retrait
+Calculer les interets
+Quitter
