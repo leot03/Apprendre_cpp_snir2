@@ -1,7 +1,7 @@
 ![](https://cdn.discordapp.com/attachments/400019430479888394/1017780680798777385/logotouchard.png)
 
 # Apprendre le C++ | SN-IR 2 
-> Répertoire Github regroupant les TD réalisés en classe
+> Répertoire Github regroupant les TD & TP réalisés en classe
 
 ## Sommaire
 * [00 Les flux](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/00_Les_flux)
@@ -18,13 +18,17 @@
         * [Un peu de patiente](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/03_IPCs/01_Communication_Inter_Processus_Locale/unPeuDePatiente)
         * [SignalKill](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/03_IPCs/01_Communication_Inter_Processus_Locale/SignalKill)
         * [Les Barres - Catalogue](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/02_Relation_entre_les_classes/LesBarres)
+* [10 TP Controle](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/10_TpControle)
+    * [Projet Banque](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/10_TpControle/Projet_Banque)
+        * [Documentation](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/10_TpControle/Projet_Banque/Documentation)
+        * [La Banque](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/10_TpControle/Projet_Banque/LaBanque)
 
 ## Fabriqué avec
 * [Netbeans](https://netbeans.apache.org/) - Environnement de développement intégré
 * [Qt Creator](https://www.qt.io/) - Environnement de développement intégré multiplate-forme
 
 ## Versions
-**Dernière modification le :** 22/09/2022<br>
+**Dernière modification le :** 23/09/2022<br>
 **Ajouté sur Github le :** 02/09/2022
 
 ## Auteur
