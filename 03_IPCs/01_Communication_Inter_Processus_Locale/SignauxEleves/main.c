@@ -25,15 +25,24 @@ int main() {
         {
             printf("pid : %d ppid : %d\n", getpid(), getppid());
 
-            retour = read(tube[0], buffer, MAXBUFF);
+            retour = read(tube[0], buffer, 255);
+            if (retour==-1) {
+                printf("pb de read dans le tube : %s", strerror(errno));
+                exit(errno);
+            }
             printf("message de p1 : %s\n", buffer);
         } else // P1
         {
             printf("pid : %d\n", getpid());
             retour = write(tube[1], msg, strlen(msg));
-
-
+            if (retour==-1) {
+                printf("pb de read dans le tube : %s", strerror(errno));
+                exit(errno);
+            }
         }
+    } else {
+        printf("pb de tube : %s", strerror(errno));
+        exit(errno);
     }
     return 0;
 }
