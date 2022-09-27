@@ -14,6 +14,7 @@ int main() {
     int tube[2];
     int retour;
     //P1
+    
     memset(buffer, '\0', MAXBUFF);
 
     //Création du tube commun
