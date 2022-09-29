@@ -1,4 +1,59 @@
+///////////////////////////////// Exercice n°4 /////////////////////////////////
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <signal.h>
+#include <errno.h>
+
+void traitement(int sig) {
+    (void) signal(SIGUSR1, traitement);
+    printf("Un signal SIGUSR1 je suis pid : %d\n", getpid());
+}
+
+int main(int argc, char** argv) {
+    int nbOctets;
+    int descTube[2];
+    int pid, pidP1, pidP2, pidP3;
+    
+    char buffer[BUFSIZ];
+
+    (void) signal(SIGUSR1, traitement); // Rederoutage des signaux SIGUSR1
+    // Vers la fonction traitemet
+    memset(buffer, '\0', BUFSIZ);
+    // P1
+    
+    pidP1 = getpid(); // Sauvegarde du pid de P1 pour P3
+    printf("Début pid P1 : %d\n", pidP1); 
+    if (pipe(descTube) == 0) {
+        if(pipe(descTube) == 0) {
+            pid = fork();
+            if (pid == 0) { // P3
+                pidP3 = getpid();
+                printf("P3 pid = %d\n", pidP3);
+                nbOctets = write(descTube[1], &pidP3, sizeof(pidP3));
+                printf("Je suis P3 : %d octets écrits\n", nbOctets);
+            } else { // P2
+                printf("P2 pid = %d\n", getpid());
+                pause(); // Attente signal SIGUSR1
+            }
+        } else { // P1
+            pidP2 = pid; //Le pid de P2 est dans le pid, on sauvegarde dans pidP2
+            printf("Père pid = %d\n", getpid());
+            sleep(3); // Tempo pour envoyer le signal en décalé
+            kill(pidP2, SIGUSR1);
+            // Manque read tube + kill vers P30.
+        }
+    }
+    return (EXIT_SUCCESS);
+}
+////////////////////////////////////////////////////////////////////////////////
+
+
+/*
 ///////////////////////////////// Exercice n°3 /////////////////////////////////
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -34,12 +89,13 @@ int main(int argc, char** argv) {
     }
     return (EXIT_SUCCESS);
 }
+
 ////////////////////////////////////////////////////////////////////////////////
 
 
 
 ///////////////////////////////// Exercice n°2 /////////////////////////////////
-/*
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -65,5 +121,7 @@ int main(int argc, char** argv) {
     }
     return (EXIT_SUCCESS);
 }
-*/
+
 ////////////////////////////////////////////////////////////////////////////////
+
+*/
