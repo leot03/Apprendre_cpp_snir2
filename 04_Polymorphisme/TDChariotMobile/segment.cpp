@@ -3,15 +3,16 @@
 #include <iomanip>
 using namespace std;
 
-Segment::Segment(const double _longueur, const double _angle):
+Segment::Segment(const double _longueur, const double _angle, const double _vitesse):
     longueur(_longueur),
-    angle(_angle)
+    angle(_angle),
+    vitesse(_vitesse)
 {
- cout << "" << endl;
+
 }
 
 void Segment::Afficher()
 {
-    cout << "SEGMENT L = " <<  longueur << setw(12) << "A = " << angle << endl;
+    cout << "SEGMENT L = " <<  longueur << setw(6) << "A = " << setw(6) << "V = " << vitesse << endl;
     // cout << "SEGMENT L = " <<  longueur << setw(12) << "A = " << angle << endl;
 }

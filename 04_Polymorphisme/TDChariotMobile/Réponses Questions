@@ -1,0 +1,3 @@
+1- Comment se nomme la relation entre la classe Trajectoire et la classe
+Element, sous quelle forme cette relation doit être implémentée en C++ ?
+La relation entre la classe Trajectoire et la classe Element se nomme "Composition", elle doit être implémentée sous forme de losange noir plein.
