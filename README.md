@@ -19,6 +19,7 @@
         * [Un peu de patiente](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/03_IPCs/01_Communication_Inter_Processus_Locale/unPeuDePatiente)
         * [SignalKill](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/03_IPCs/01_Communication_Inter_Processus_Locale/SignalKill)
         * [SignauxEleves](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/03_IPCs/01_Communication_Inter_Processus_Locale/SignauxEleves)
+        * [Popen / Pipe](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/03_IPCs/01_Communication_Inter_Processus_Locale/PopenPipe)
 * [10 TP Controle](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/10_TpControle)
     * [Projet Banque](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/10_TpControle/Projet_Banque)
         * [Documentation](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/10_TpControle/Projet_Banque/Documentation)
@@ -29,7 +30,7 @@
 * [Qt Creator](https://www.qt.io/) - Environnement de développement intégré multiplate-forme
 
 ## Versions
-**Dernière modification le :** 27/09/2022<br>
+**Dernière modification le :** 29/09/2022<br>
 **Ajouté sur Github le :** 02/09/2022
 
 ## Auteur
