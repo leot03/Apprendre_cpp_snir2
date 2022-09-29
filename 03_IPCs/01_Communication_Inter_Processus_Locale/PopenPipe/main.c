@@ -43,7 +43,7 @@ int main(int argc, char** argv) {
             printf("Père pid = %d\n", getpid());
             sleep(3); // Tempo pour envoyer le signal en décalé
             kill(pidP2, SIGUSR1);
-            // Manque read tube + kill vers P30.
+            // Manque read tube + kill vers P3 + sleep
         }
     }
     return (EXIT_SUCCESS);
@@ -53,7 +53,6 @@ int main(int argc, char** argv) {
 
 /*
 ///////////////////////////////// Exercice n°3 /////////////////////////////////
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -89,13 +88,11 @@ int main(int argc, char** argv) {
     }
     return (EXIT_SUCCESS);
 }
-
 ////////////////////////////////////////////////////////////////////////////////
 
 
 
 ///////////////////////////////// Exercice n°2 /////////////////////////////////
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -121,7 +118,6 @@ int main(int argc, char** argv) {
     }
     return (EXIT_SUCCESS);
 }
-
 ////////////////////////////////////////////////////////////////////////////////
 
 */
