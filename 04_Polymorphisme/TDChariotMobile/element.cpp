@@ -1,22 +1,19 @@
 #include "element.h"
 
 Element::Element(const int _vitesse):
-    nume
-{
+    numero(0),
+    vitesse(_vitesse) {
 
 }
 
-Element::~Element()
-{
+Element::~Element() {
 
 }
 
-int Element::getNumero() const
-{
-
+int Element::getNumero() const {
+     return numero;
 }
 
-void Element::setNumero(const int _numero)
-{
+void Element::setNumero(const int _numero) {
 
 }

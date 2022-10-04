@@ -7,9 +7,11 @@ SOURCES += \
         element.cpp \
         main.cpp \
         segment.cpp \
-        trajectoire.cpp
+        trajectoire.cpp \
+        vecteur.cpp
 
 HEADERS += \
     element.h \
     segment.h \
-    trajectoire.h
+    trajectoire.h \
+    vecteur.h
