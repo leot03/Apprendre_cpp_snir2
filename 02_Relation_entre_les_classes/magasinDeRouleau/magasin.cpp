@@ -54,5 +54,13 @@ void Magasin::Visualiser()
     cout << "Rouleau dans le magasin : " << endl;
     if(!leStock.empty()) {
         leStock.Visualiser();
+    } else {
+        cout << "Le stock est vide" << endl;
+    }
+    cout << "Numéro d'alvéoles disponibles :" << endl;
+    if(!lesAlveolesLibres.empty()) {
+        lesAlveolesLibres.Visualiser();
+    } else {
+        cout << "Le magasin est complet" << endl;
     }
 }

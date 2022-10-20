@@ -7,6 +7,7 @@ SOURCES += \
         alveoleslibres.cpp \
         chariot.cpp \
         magasin.cpp \
+        main.cpp \
         menu.cpp \
         rouleau.cpp \
         stock.cpp \
