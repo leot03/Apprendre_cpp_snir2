@@ -28,6 +28,7 @@
         * [Documentation](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/10_TpControle/Projet_Banque/Documentation)
         * [La Banque](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/10_TpControle/Projet_Banque/LaBanque)
 * [20 TP Digicode](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/20_Projet_Digicode)
+        * [Digicode](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/20_Projet_Digicode/digicode)
 
 ## Fabriqué avec
 * [Netbeans](https://netbeans.apache.org/) - Environnement de développement intégré
