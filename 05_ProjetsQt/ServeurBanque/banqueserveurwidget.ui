@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>893</width>
-    <height>522</height>
+    <width>299</width>
+    <height>182</height>
    </rect>
   </property>
   <property name="font">
@@ -24,16 +24,23 @@
     <rect>
      <x>50</x>
      <y>40</y>
-     <width>811</width>
-     <height>451</height>
+     <width>191</width>
+     <height>91</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Arial</family>
-     <pointsize>32</pointsize>
+     <pointsize>16</pointsize>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(114, 159, 207);
+color: rgb(238, 238, 236);</string>
    </property>
    <property name="text">
     <string>QUITTER</string>

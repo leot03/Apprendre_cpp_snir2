@@ -43,9 +43,13 @@
     * [Equilibreuse TDs Fichiers Etudiants](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/05_ProjetsQt/Equilibreuse_TDs_Fichiers_Etudiants)
     * [Client TCP](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/05_ProjetsQt/clientTCP)
     * [Serveur TCP](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/05_ProjetsQt/serveurTCP)
-* [06 Base de données](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/05_ProjetsQt)
+* [06 Base de données](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/06_BaseDeDonnées)
     * [Test des BDD](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/06_BaseDeDonnées/TestBDD)
     * [TD1 Qt MySQL](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/06_BaseDeDonnées/TD1_Qt_MySQL)
+    * [TD1 Qt MySQL](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/06_BaseDeDonnées/BanqueBDD)
+* [07 Java Script](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/07_JavaScript)
+    * [TD1 Qt MySQL](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/07_JavaScript/TestCours)
+    * [TD1 Qt MySQL](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/07_JavaScript/ServeurWebSocketCours)
 * [10 TP Controle](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/10_TpControle)
     * [Projet Banque](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/10_TpControle/Projet_Banque)
         * [Documentation](https://github.com/leot03/Apprendre_cpp_snir2/tree/main/10_TpControle/Projet_Banque/Documentation)
@@ -58,7 +62,7 @@
 * [Qt Creator](https://www.qt.io/) - Environnement de développement intégré multiplate-forme
 
 ## Versions
-**Dernière modification le :** 25/11/2022<br>
+**Dernière modification le :** 08/12/2022<br>
 **Ajouté sur Github le :** 02/09/2022
 
 ## Auteur

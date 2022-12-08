@@ -7,7 +7,6 @@
 
 #include "experience.h"
 
-
 namespace Ui {
 class DialogParametrageEquilibreuse;
 }

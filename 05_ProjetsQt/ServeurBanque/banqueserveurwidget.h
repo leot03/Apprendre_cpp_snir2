@@ -2,6 +2,7 @@
 #define BANQUESERVEURWIDGET_H
 
 #include <QWidget>
+#include "serveurbanque.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class BanqueServeurWidget; }
@@ -17,5 +18,6 @@ public:
 
 private:
     Ui::BanqueServeurWidget *ui;
+    ServeurBanque laBanque;
 };
 #endif // BANQUESERVEURWIDGET_H

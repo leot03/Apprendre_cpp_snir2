@@ -6,16 +6,15 @@
 
 
 #include "experience.h"
-#include "qapplication.h"
-#include "qguiapplication.h"
-#include "qcoreapplication.h"
 
 Experience::Experience(QObject *parent) : QObject(parent)
   , vitesseMaxi(0)
+  , configExperience(false)
   , nbEchantillons(0)
   , origine(0)
   , vitesse(0)
   , mesuresBrutes(nullptr)
+
 {
     LireFichierIni();
 }
@@ -26,57 +25,57 @@ void Experience::LireFichierIni()
     QFileInfo fichierIni(nomFichierIni);
     if (fichierIni.exists() && fichierIni.isFile())
     {
-        QSettings paramsEquilibreuse(nomFichierIni, QSettings::IniFormat);
+        QSettings param(nomFichierIni,QSettings::IniFormat);
+        paliers[PALIER_A].jauge.modele = param.value("JaugeA/modele").toString();
+        paliers[PALIER_A].jauge.numeroDeSerie = param.value("JaugeA/serie").toString();
+        paliers[PALIER_A].jauge.date = param.value("JaugeA/date").toString();
+        paliers[PALIER_A].jauge.capacite = param.value("JaugeA/capacite").toDouble();
+        paliers[PALIER_A].jauge.sensibilite = param.value("JaugeA/sensibilite").toDouble();
 
-        paliers[PALIER_A].jauge.capacite = paramsEquilibreuse.value("JaugeA/capacite", "25").toDouble();
-        paliers[PALIER_A].jauge.date = paramsEquilibreuse.value("JaugeA/date", "09-22-1998").toString();
-        paliers[PALIER_A].jauge.modele = paramsEquilibreuse.value("JaugeA/modele", "MB-25").toString();
-        paliers[PALIER_A].jauge.sensibilite = paramsEquilibreuse.value("JaugeA/sensibilite", "3.348").toDouble();
-        paliers[PALIER_A].jauge.numeroDeSerie = paramsEquilibreuse.value("JaugeA/serie", "C30629").toString();
-
-        paliers[PALIER_O].jauge.capacite = paramsEquilibreuse.value("JaugeO/capacite", "25").toDouble();
-        paliers[PALIER_O].jauge.date = paramsEquilibreuse.value("JaugeO/date", "10-05-1998").toString();
-        paliers[PALIER_O].jauge.modele = paramsEquilibreuse.value("JaugeO/modele", "MB-25").toString();
-        paliers[PALIER_O].jauge.sensibilite= paramsEquilibreuse.value("JaugeO/sensibilite", "3.328").toDouble();
-        paliers[PALIER_O].jauge.numeroDeSerie = paramsEquilibreuse.value("JaugeO/serie", "C30637").toString();
+        paliers[PALIER_O].jauge.modele = param.value("JaugeO/modele").toString();
+        paliers[PALIER_O].jauge.numeroDeSerie = param.value("JaugeO/serie").toString();
+        paliers[PALIER_O].jauge.date = param.value("JaugeO/date").toString();
+        paliers[PALIER_O].jauge.capacite = param.value("JaugeO/capacite").toDouble();
+        paliers[PALIER_O].jauge.sensibilite = param.value("JaugeO/sensibilite").toDouble();
     }
     else
     {
-        paliers[PALIER_A].jauge.capacite = 25;
-        paliers[PALIER_A].jauge.date= "09-22-1998";
-        paliers[PALIER_A].jauge.modele= "MB-25";
-        paliers[PALIER_A].jauge.sensibilite = 3.348;
+        paliers[PALIER_A].jauge.modele = "MB-25";
         paliers[PALIER_A].jauge.numeroDeSerie = "C30629";
+        paliers[PALIER_A].jauge.date = "09-22-1998";
+        paliers[PALIER_A].jauge.capacite = 25;
+        paliers[PALIER_A].jauge.sensibilite = 3.348;
 
-        paliers[PALIER_O].jauge.capacite = 25;
-        paliers[PALIER_O].jauge.date= "10-05-1998";
         paliers[PALIER_O].jauge.modele = "MB-25";
+        paliers[PALIER_O].jauge.numeroDeSerie = "C30637";
+        paliers[PALIER_O].jauge.date = "10-05-1998";
+        paliers[PALIER_O].jauge.capacite = 25;
         paliers[PALIER_O].jauge.sensibilite = 3.328;
-        paliers[PALIER_O].jauge.numeroDeSerie= "C30637";
 
-        // si le fichier n’existe pas, il est créé avec les valeurs par défaut
-        // il est ensuite enregistré
+        EnregistreFichierIni(paliers);
     }
 }
 
 void Experience::EnregistreFichierIni(const typePalier _paliers[])
 {
-    QString nomFichierIni="equilibreuse.ini";
-    QSettings fichierIni(nomFichierIni);
-    QSettings paramsEquilibreuse(nomFichierIni, QSettings::IniFormat);
-    paramsEquilibreuse.beginGroup("JaugeA");
-    paramsEquilibreuse.setValue("capacite", _paliers[PALIER_A].jauge.capacite);
-    paramsEquilibreuse.setValue("date", _paliers[PALIER_A].jauge.date);
-    paramsEquilibreuse.setValue("modele", _paliers[PALIER_A].jauge.modele);
-    paramsEquilibreuse.setValue("sensibilite", _paliers[PALIER_A].jauge.sensibilite);
-    paramsEquilibreuse.setValue("serie", _paliers[PALIER_A].jauge.numeroDeSerie);
+    QString nomFichierIni = "equilibreuse.ini";
+    QFileInfo fichierIni(nomFichierIni);
+    QSettings param(nomFichierIni,QSettings::IniFormat);
+    param.beginGroup("JaugeA");
+    param.setValue("modele",_paliers[PALIER_A].jauge.modele);
+    param.setValue("serie",_paliers[PALIER_A].jauge.numeroDeSerie);
+    param.setValue("date",_paliers[PALIER_A].jauge.date);
+    param.setValue("capacite",_paliers[PALIER_A].jauge.capacite);
+    param.setValue("sensibilite",_paliers[PALIER_A].jauge.sensibilite);
+    param.endGroup();
 
-    paramsEquilibreuse.beginGroup("JaugeO");
-    paramsEquilibreuse.setValue("capacite", _paliers[PALIER_O].jauge.capacite);
-    paramsEquilibreuse.setValue("date", _paliers[PALIER_O].jauge.date);
-    paramsEquilibreuse.setValue("modele", _paliers[PALIER_O].jauge.modele);
-    paramsEquilibreuse.setValue("sensibilite", _paliers[PALIER_O].jauge.sensibilite);
-    paramsEquilibreuse.setValue("serie", _paliers[PALIER_O].jauge.numeroDeSerie);
+    param.beginGroup("JaugeO");
+    param.setValue("modele",paliers[PALIER_O].jauge.modele);
+    param.setValue("serie",paliers[PALIER_O].jauge.numeroDeSerie);
+    param.setValue("date",paliers[PALIER_O].jauge.date);
+    param.setValue("capacite",paliers[PALIER_O].jauge.capacite);
+    param.setValue("sensibilite",paliers[PALIER_O].jauge.sensibilite);
+    param.endGroup();
 }
 
 typePalier *Experience::ObtenirCarateristiquesPaliers()
@@ -86,8 +85,31 @@ typePalier *Experience::ObtenirCarateristiquesPaliers()
 
 void Experience::LireMesuresBrutes(QString &_nomFichier)
 {
+    QFile fichierBrute(_nomFichier);
+    if (!fichierBrute.open(QIODevice::ReadOnly))
+        qDebug() << "Le Fichier " << _nomFichier << " ne peut pas s'ouvrir";
 
-    // à completer dans le TD2
+    else
+    {
+        QDataStream flux(&fichierBrute);
+        flux >> nbEchantillons;
+        flux >> vitesse;
+        flux >> origine ;
+
+        if (mesuresBrutes != nullptr)
+        {
+            delete[] mesuresBrutes;
+            mesuresBrutes = nullptr;
+        }
+
+        if(mesuresBrutes == nullptr)
+            mesuresBrutes = new double[nbEchantillons];
+
+        for(quint32 i = 0 ; i < nbEchantillons ; i++)
+            flux >> mesuresBrutes[i] ;
+
+        fichierBrute.close();
+    }
 }
 
 void Experience::InitiliserCourbes()
@@ -174,4 +196,68 @@ double Experience::RechercherEffortAquatreVingtDix(QChar courbe)
 qint16 Experience::ObtenirVitesse()
 {
     return vitesse;
+}
+
+QString Experience::ObtenirEtablissement() const
+{
+    return etablissement;
+}
+
+void Experience::ModifierEtablissement(const QString &value)
+{
+    etablissement = value;
+}
+
+QString Experience::ObtenirNom() const
+{
+    return nomEtudiant;
+}
+
+void Experience::ModifierNom(const QString &value)
+{
+    nomEtudiant = value;
+}
+
+QString Experience::ObtenirPrenom() const
+{
+    return prenomEtudiant;
+}
+
+void Experience::ModifierPrenom(const QString &value)
+{
+    prenomEtudiant = value;
+}
+
+QString Experience::ObtenirClasse() const
+{
+    return classe;
+}
+
+void Experience::ModifierClasse(const QString &value)
+{
+    classe = value;
+}
+
+QString Experience::ObtenirCommentaire() const
+{
+    return commentaire;
+}
+
+void Experience::ModifierCommentaire(const QString &value)
+{
+    commentaire = value;
+}
+
+QString Experience::ObtenirDate() const
+{
+    return date.toString("dddd d MMMM yyyy");
+}
+
+void Experience::ModifierDate(const QDate &value)
+{
+    date = value;
+}
+void Experience::ValiderConfig(bool _etat)
+{
+    configExperience = _etat;
 }

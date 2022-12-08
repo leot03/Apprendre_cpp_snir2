@@ -44,7 +44,7 @@ void UiServeurTcp::onQTcpServerNewConnection()
 
     ui -> textEditMessage -> append("nouvelle connexion");
     // Récupération de la socket de comma evc le client
-    sockClient=sockServ.nextPendingConnection();
+  //  sockClient=sockServ.nextPendingConnection();
 
 }
 
@@ -73,10 +73,10 @@ void UiServeurTcp::onQTcpSocketReadyRead()
     QByteArray reponse;
     ui -> textEditMessage -> append("dans ReadyRead");
     // reception message client
-    sockClient = qobject_cast<QTcpSocket*>(sender());
-    data=sockClient -> readAll();
-    ui -> textEditMessage -> append(sockClient -> peerAddress().toString() + " : " + data);
+    //sockClient = qobject_cast<QTcpSocket*>(sender());
+   // data=sockClient -> readAll();
+    //ui -> textEditMessage -> append(sockClient -> peerAddress().toString() + " : " + data);
     // envoyer la réponse
     reponse = "Message reçu : " + data;
-    sockClient -> write(reponse);
+   // sockClient -> write(reponse);
 }
