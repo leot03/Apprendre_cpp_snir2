@@ -1,4 +1,4 @@
-![](https://cdn.discordapp.com/attachments/400019430479888394/1017780680798777385/logotouchard.png)
+![]<img align="right" src="https://www.touchard-washington.fr/wp-content/uploads/elementor/thumbs/LYCEE-TW-RVB-BLEU@2x-ouqqzhaifqs0ecueqajd2l306gb31pbjc3bpoxcfrw.png">)
 
 # Apprendre le C++ | SN-IR 2 
 > Répertoire Github regroupant les TD & TP réalisés en classe
