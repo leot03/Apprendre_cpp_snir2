@@ -35,7 +35,7 @@ void ServeurBanque::EnvoyerMessage(QString _message, CompteClient *_client)
     out << taille << _message;
     // calcuyl de la taille de la trame
     taille = (static_cast<quint16>(tampon.size()))-sizeof(taille);
-
+// placement sur la premiere position de
     tampon.seek(0);
 
     out << taille;

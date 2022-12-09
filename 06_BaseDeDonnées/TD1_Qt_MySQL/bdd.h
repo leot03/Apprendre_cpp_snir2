@@ -20,6 +20,10 @@ public:
 private slots:
     void on_pushButton_Leave_clicked();
     void on_pushButton_Login_clicked();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 43b97ec09a016bbcd04029504513e72dc36993f2
     void on_pushButton_nomDepartement_clicked();
 
 private:

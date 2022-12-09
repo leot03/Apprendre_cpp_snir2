@@ -944,10 +944,9 @@ compiler_moc_header_make_all: moc_banque.cpp
 compiler_moc_header_clean:
 	-$(DEL_FILE) moc_banque.cpp
 moc_banque.cpp: ../BanqueBDD/banque.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/QWidget \
-		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qwidget.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtguiglobal.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/QSqlDatabase \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/qsqldatabase.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/qtsqlglobal.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qglobal.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qconfig-bootstrapped.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qconfig.h \
@@ -970,22 +969,15 @@ moc_banque.cpp: ../BanqueBDD/banque.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qnumeric.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qversiontagging.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtgui-config.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtguiexports.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtGui/qwindowdefs.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobjectdefs.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qnamespace.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qtmetamacros.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtGui/qwindowdefs_win.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobject.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/qtsql-config.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/qtsqlexports.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstring.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qchar.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringview.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qbytearray.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qrefcount.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qnamespace.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qtmetamacros.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qarraydata.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qpair.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qarraydatapointer.h \
@@ -999,6 +991,9 @@ moc_banque.cpp: ../BanqueBDD/banque.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qutf8stringview.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringtokenizer.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringbuilder.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/QSqlQuery \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/qsqlquery.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qvariant.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qlist.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qhashfunctions.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qiterator.h \
@@ -1006,21 +1001,46 @@ moc_banque.cpp: ../BanqueBDD/banque.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringlist.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qalgorithms.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringmatcher.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcoreevent.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qscopedpointer.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmetatype.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcompare.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qvarlengtharray.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qscopeguard.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qdatastream.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qscopedpointer.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qiodevicebase.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qiterable.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmetacontainer.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcontainerinfo.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qtaggedpointer.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmath.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobjectdefs.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmap.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qshareddata.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qshareddata_impl.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qhash.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobject.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcoreevent.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobject_impl.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qbindingstorage.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qdebug.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qtextstream.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringconverter.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qset.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcontiguouscache.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qsharedpointer.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/QDialog \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qdialog.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtguiglobal.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtgui-config.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtguiexports.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qwidget.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtGui/qwindowdefs.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtGui/qwindowdefs_win.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmargins.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qaction.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qkeysequence.h \
@@ -1033,24 +1053,12 @@ moc_banque.cpp: ../BanqueBDD/banque.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qcolor.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qrgb.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qrgba64.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qsharedpointer.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qshareddata.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qimage.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qpixelformat.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtransform.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qpolygon.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qregion.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qline.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qvariant.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmap.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qshareddata_impl.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qhash.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qdebug.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qtextstream.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringconverter.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qset.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcontiguouscache.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qpalette.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qbrush.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qfont.h \
@@ -1076,6 +1084,7 @@ moc_banque.cpp: ../BanqueBDD/banque.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/QSizeF \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/QTransform \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qnativeinterface.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/QWidget \
 		moc_predefs.h \
 		/opt/Qt/6.3.1/gcc_64/libexec/moc
 	/opt/Qt/6.3.1/gcc_64/libexec/moc $(DEFINES) --include /home/USERS/ELEVES/SNIR2021/lthomas/Github/Apprendre_cpp_snir2/06_BaseDeDonnées/build-BanqueBDD-Desktop_Qt_6_3_1_GCC_64bit-Debug/moc_predefs.h -I/opt/Qt/6.3.1/gcc_64/mkspecs/linux-g++ -I/home/USERS/ELEVES/SNIR2021/lthomas/Github/Apprendre_cpp_snir2/06_BaseDeDonnées/BanqueBDD -I/opt/Qt/6.3.1/gcc_64/include -I/opt/Qt/6.3.1/gcc_64/include/QtWidgets -I/opt/Qt/6.3.1/gcc_64/include/QtGui -I/opt/Qt/6.3.1/gcc_64/include/QtSql -I/opt/Qt/6.3.1/gcc_64/include/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../BanqueBDD/banque.h -o moc_banque.cpp
@@ -1102,10 +1111,9 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 ####### Compile
 
 main.o: ../BanqueBDD/main.cpp ../BanqueBDD/banque.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/QWidget \
-		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qwidget.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtguiglobal.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/QSqlDatabase \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/qsqldatabase.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/qtsqlglobal.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qglobal.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qconfig-bootstrapped.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qconfig.h \
@@ -1128,22 +1136,15 @@ main.o: ../BanqueBDD/main.cpp ../BanqueBDD/banque.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qnumeric.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qversiontagging.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtgui-config.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtguiexports.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtGui/qwindowdefs.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobjectdefs.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qnamespace.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qtmetamacros.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtGui/qwindowdefs_win.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobject.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/qtsql-config.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/qtsqlexports.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstring.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qchar.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringview.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qbytearray.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qrefcount.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qnamespace.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qtmetamacros.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qarraydata.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qpair.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qarraydatapointer.h \
@@ -1157,6 +1158,9 @@ main.o: ../BanqueBDD/main.cpp ../BanqueBDD/banque.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qutf8stringview.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringtokenizer.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringbuilder.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/QSqlQuery \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/qsqlquery.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qvariant.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qlist.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qhashfunctions.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qiterator.h \
@@ -1164,21 +1168,46 @@ main.o: ../BanqueBDD/main.cpp ../BanqueBDD/banque.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringlist.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qalgorithms.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringmatcher.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcoreevent.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qscopedpointer.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmetatype.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcompare.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qvarlengtharray.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qscopeguard.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qdatastream.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qscopedpointer.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qiodevicebase.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qiterable.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmetacontainer.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcontainerinfo.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qtaggedpointer.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmath.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobjectdefs.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmap.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qshareddata.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qshareddata_impl.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qhash.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobject.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcoreevent.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobject_impl.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qbindingstorage.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qdebug.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qtextstream.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringconverter.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qset.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcontiguouscache.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qsharedpointer.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/QDialog \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qdialog.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtguiglobal.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtgui-config.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtguiexports.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qwidget.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtGui/qwindowdefs.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtGui/qwindowdefs_win.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmargins.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qaction.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qkeysequence.h \
@@ -1191,24 +1220,12 @@ main.o: ../BanqueBDD/main.cpp ../BanqueBDD/banque.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qcolor.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qrgb.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qrgba64.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qsharedpointer.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qshareddata.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qimage.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qpixelformat.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtransform.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qpolygon.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qregion.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qline.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qvariant.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmap.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qshareddata_impl.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qhash.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qdebug.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qtextstream.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringconverter.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qset.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcontiguouscache.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qpalette.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qbrush.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qfont.h \
@@ -1234,6 +1251,7 @@ main.o: ../BanqueBDD/main.cpp ../BanqueBDD/banque.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/QSizeF \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/QTransform \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qnativeinterface.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/QWidget \
 		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/QApplication \
 		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcoreapplication.h \
@@ -1258,10 +1276,9 @@ main.o: ../BanqueBDD/main.cpp ../BanqueBDD/banque.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../BanqueBDD/main.cpp
 
 banque.o: ../BanqueBDD/banque.cpp ../BanqueBDD/banque.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/QWidget \
-		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qwidget.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtguiglobal.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/QSqlDatabase \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/qsqldatabase.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/qtsqlglobal.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qglobal.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qconfig-bootstrapped.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qconfig.h \
@@ -1284,22 +1301,15 @@ banque.o: ../BanqueBDD/banque.cpp ../BanqueBDD/banque.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qnumeric.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qversiontagging.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtgui-config.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtguiexports.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtGui/qwindowdefs.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobjectdefs.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qnamespace.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qtmetamacros.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtGui/qwindowdefs_win.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobject.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/qtsql-config.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/qtsqlexports.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstring.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qchar.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringview.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qbytearray.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qrefcount.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qnamespace.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qtmetamacros.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qarraydata.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qpair.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qarraydatapointer.h \
@@ -1313,6 +1323,9 @@ banque.o: ../BanqueBDD/banque.cpp ../BanqueBDD/banque.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qutf8stringview.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringtokenizer.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringbuilder.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/QSqlQuery \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/qsqlquery.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qvariant.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qlist.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qhashfunctions.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qiterator.h \
@@ -1320,21 +1333,46 @@ banque.o: ../BanqueBDD/banque.cpp ../BanqueBDD/banque.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringlist.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qalgorithms.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringmatcher.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcoreevent.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qscopedpointer.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmetatype.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcompare.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qvarlengtharray.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qscopeguard.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qdatastream.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qscopedpointer.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qiodevicebase.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qiterable.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmetacontainer.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcontainerinfo.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qtaggedpointer.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmath.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobjectdefs.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmap.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qshareddata.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qshareddata_impl.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qhash.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobject.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcoreevent.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qobject_impl.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qbindingstorage.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qdebug.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qtextstream.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringconverter.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qset.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcontiguouscache.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qsharedpointer.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/QDialog \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qdialog.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtguiglobal.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtgui-config.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtguiexports.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qwidget.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtGui/qwindowdefs.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtGui/qwindowdefs_win.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmargins.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qaction.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qkeysequence.h \
@@ -1347,24 +1385,12 @@ banque.o: ../BanqueBDD/banque.cpp ../BanqueBDD/banque.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qcolor.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qrgb.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qrgba64.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qsharedpointer.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qshareddata.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qimage.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qpixelformat.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qtransform.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qpolygon.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qregion.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qline.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qvariant.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qmap.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qshareddata_impl.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qhash.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qdebug.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qtextstream.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qstringconverter.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qset.h \
-		/opt/Qt/6.3.1/gcc_64/include/QtCore/qcontiguouscache.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qpalette.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qbrush.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/qfont.h \
@@ -1390,7 +1416,13 @@ banque.o: ../BanqueBDD/banque.cpp ../BanqueBDD/banque.h \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/QSizeF \
 		/opt/Qt/6.3.1/gcc_64/include/QtGui/QTransform \
 		/opt/Qt/6.3.1/gcc_64/include/QtCore/qnativeinterface.h \
-		ui_banque.h
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/QWidget \
+		ui_banque.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtCore/QDebug \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/QSqlError \
+		/opt/Qt/6.3.1/gcc_64/include/QtSql/qsqlerror.h \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/QMessageBox \
+		/opt/Qt/6.3.1/gcc_64/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o banque.o ../BanqueBDD/banque.cpp
 
 moc_banque.o: moc_banque.cpp 
